@@ -56,6 +56,7 @@ public class DefaultGrid extends JFrame {
 			if (board[0][0] == 0) {
 				board[0][0] = playingSide;
 				turnLogic(board, playingSide, btn1);
+				movesCount++;
 				computerMove();
 			}
 		});
@@ -69,6 +70,7 @@ public class DefaultGrid extends JFrame {
 			if (board[0][1] == 0) {
 				board[0][1] = playingSide;
 				turnLogic(board, playingSide, btn2);
+				movesCount++;
 				computerMove();
 			}
 		});
@@ -82,6 +84,7 @@ public class DefaultGrid extends JFrame {
 			if (board[0][2] == 0) {
 				board[0][2] = playingSide;
 				turnLogic(board, playingSide, btn3);
+				movesCount++;
 				computerMove();
 			}
 		});
@@ -95,6 +98,7 @@ public class DefaultGrid extends JFrame {
 			if (board[1][0] == 0) {
 				board[1][0] = playingSide;
 				turnLogic(board, playingSide, btn4);
+				movesCount++;
 				computerMove();
 			}
 		});
@@ -108,6 +112,7 @@ public class DefaultGrid extends JFrame {
 			if (board[1][1] == 0) {
 				board[1][1] = playingSide;
 				turnLogic(board, playingSide, btn5);
+				movesCount++;
 				computerMove();
 			}
 		});
@@ -121,6 +126,7 @@ public class DefaultGrid extends JFrame {
 			if (board[1][2] == 0) {
 				board[1][2] = playingSide;
 				turnLogic(board, playingSide, btn6);
+				movesCount++;
 				computerMove();
 			}
 		});
@@ -134,6 +140,7 @@ public class DefaultGrid extends JFrame {
 			if (board[2][0] == 0) {
 				board[2][0] = playingSide;
 				turnLogic(board, playingSide, btn7);
+				movesCount++;
 				computerMove();
 			}
 		});
@@ -147,6 +154,7 @@ public class DefaultGrid extends JFrame {
 			if (board[2][1] == 0) {
 				board[2][1] = playingSide;
 				turnLogic(board, playingSide, btn8);
+				movesCount++;
 				computerMove();
 			}
 		});
@@ -160,6 +168,7 @@ public class DefaultGrid extends JFrame {
 			if (board[2][2] == 0) {
 				board[2][2] = playingSide;
 				turnLogic(board, playingSide, btn9);
+				movesCount++;
 				computerMove();
 			}
 		});
@@ -239,6 +248,7 @@ public class DefaultGrid extends JFrame {
 			b.setEnabled(true);
 			b.setSelected(false);
 		});
+		movesCount=0;
 	}
 
 	private void victoryDisablesButtons(String result) {
@@ -248,9 +258,13 @@ public class DefaultGrid extends JFrame {
 	}
 
 	private void computerMove() {
+		if(!checker.whoIsTheWinner(board, playingSide).contains("Next turn")){
+			return;
+		}
 		checkWhichSidePlaysNow();
 		Position position = computerMove.makeComputerMove(board, movesCount, playingSide);
 		JButton button = buttonsPositionsInBoard.get(position.createXY());
 		turnLogic(board, playingSide, button);
+		movesCount++;
 	}
 }

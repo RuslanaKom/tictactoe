@@ -10,7 +10,7 @@ public class ComputerMove {
     private CombinationsChecker combinationsChecker = new CombinationsChecker();
 
     public Position makeComputerMove(char[][] board, int moveCount, char side) {
-        if (moveCount <= 3) {
+        if (moveCount <= 2) {
             return selectStartingMove(board, side);
         }
         return selectMinimumLossMove(board, side);
