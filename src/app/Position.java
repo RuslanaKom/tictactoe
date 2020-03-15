@@ -3,6 +3,7 @@ package app;
 public class Position {
     private int x;
     private int y;
+    private String xy;
 
     public Position() {
     }
@@ -26,5 +27,9 @@ public class Position {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    public String createXY(){
+        return String.valueOf(this.x)+String.valueOf(this.y);
     }
 }
