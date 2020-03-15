@@ -28,7 +28,6 @@ import javax.swing.ButtonGroup;
 public class MainWindow {
 
 	private JFrame frame;
-	private boolean playerX=true;
 
 	/**
 	 * Launch the application.
@@ -37,14 +36,12 @@ public class MainWindow {
 		Set<Character> uniqueChars = new HashSet<Character>();
 		uniqueChars.add('\u0000');
 		uniqueChars.forEach(e->System.out.println(e));
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					MainWindow window = new MainWindow();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
+		EventQueue.invokeLater(() -> {
+			try {
+				MainWindow window = new MainWindow();
+				window.frame.setVisible(true);
+			} catch (Exception e) {
+				e.printStackTrace();
 			}
 		});
 	}
@@ -77,12 +74,10 @@ public class MainWindow {
 		frame.getContentPane().add(lblDevelopedByIkirsanov);
 		
 		JButton btnx = new JButton("PLAY");
-		btnx.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				DefaultGrid grid3=new DefaultGrid();
-				grid3.setVisible(true);
-				
-			}
+		btnx.addActionListener(e -> {
+			DefaultGrid grid3=new DefaultGrid();
+			grid3.setVisible(true);
+
 		});
 		btnx.setBounds(164, 123, 161, 37);
 		frame.getContentPane().add(btnx);
