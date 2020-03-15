@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="521f762f-4fcb-4e49-8139-31d2fa7dbc6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tictactoe.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/DefaultGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/DefaultGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ui/DefaultGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/DefaultGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/MainWindow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/MainWindow$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/MainWindow.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ZABEBxypcrPZ9pBcK0wDmRy3A6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -53,10 +59,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.41724136" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="MainWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -101,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584271903519</updated>
       <workItem from="1584271906677" duration="9057000" />
-      <workItem from="1584284740192" duration="3522000" />
+      <workItem from="1584284740192" duration="4360000" />
     </task>
     <task id="LOCAL-00001" summary="Tests, position fixes, UI changes and turn logic refractor">
       <created>1584284967027</created>
@@ -117,26 +124,43 @@
       <option name="project" value="LOCAL" />
       <updated>1584288023282</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SPaces, unused imports">
+      <created>1584288512113</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584288512113</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Tests, position fixes, UI changes and turn logic refractor" />
     <MESSAGE value="Refactor listeners" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor listeners" />
+    <MESSAGE value="SPaces, unused imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="SPaces, unused imports" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="393" y="129" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584288800460">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="393" y="129" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1584288800460" />
     <state x="492" y="232" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584284761919">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="492" y="232" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1584284761919" />
-    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1584288431981">
+    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1584288511505">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1584288431981" />
+    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1584288511505" />
+    <state x="443" y="97" key="FileChooserDialogImpl" timestamp="1584288809206">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="443" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584288809206" />
     <state width="1236" height="123" key="GridCell.Tab.0.bottom" timestamp="1584288112819">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -169,10 +193,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1236" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1584287920354" />
-    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1584288027973">
+    <state x="144" y="0" key="SettingsEditor" timestamp="1584288939536">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1584288027973" />
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1584288939536" />
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1584289104452">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1584289104452" />
     <state x="345" y="101" width="591" height="478" key="find.popup" timestamp="1584285353150">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
