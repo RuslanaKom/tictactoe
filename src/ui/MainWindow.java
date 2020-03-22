@@ -1,29 +1,9 @@
 package ui;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JTextField;
-
-import javax.swing.JLabel;
-import java.awt.Font;
-import java.awt.Color;
-import javax.swing.JMenuItem;
-import javax.swing.JPopupMenu;
-import java.awt.Component;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import javax.swing.*;
+import java.awt.*;
 import java.util.HashSet;
 import java.util.Set;
-
-import javax.swing.JMenuBar;
-import java.awt.List;
-import javax.swing.JButton;
-import javax.swing.JRadioButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.ButtonGroup;
 
 public class MainWindow {
 
@@ -67,19 +47,27 @@ public class MainWindow {
 		lblTicTacToe.setFont(new Font("Tahoma", Font.PLAIN, 24));
 		lblTicTacToe.setBounds(171, 28, 139, 37);
 		frame.getContentPane().add(lblTicTacToe);
-		
-		JLabel lblDevelopedByIkirsanov = new JLabel("Developed by I.Kirsanov Heavy Industries Inc.");
-		lblDevelopedByIkirsanov.setForeground(Color.BLACK);
-		lblDevelopedByIkirsanov.setBounds(103, 239, 333, 20);
-		frame.getContentPane().add(lblDevelopedByIkirsanov);
-		
-		JButton btnx = new JButton("PLAY");
-		btnx.addActionListener(e -> {
+
+		JButton btn1 = new JButton("3x3");
+		btn1.setBounds(60, 123, 161, 37);
+		frame.getContentPane().add(btn1);
+
+		JButton btn2 = new JButton("5x5");
+		btn2.setBounds(247, 123, 161, 37);
+		frame.getContentPane().add(btn2);
+
+		btn1.addActionListener(e -> {
 			DefaultGrid grid3=new DefaultGrid();
 			grid3.setVisible(true);
-
+			btn1.setEnabled(false);
+			btn2.setEnabled(false);
 		});
-		btnx.setBounds(164, 123, 161, 37);
-		frame.getContentPane().add(btnx);
+
+		btn2.addActionListener(e -> {
+			Grid5x5 grid5x5=new Grid5x5();
+			grid5x5.setVisible(true);
+			btn1.setEnabled(false);
+			btn2.setEnabled(false);
+		});
 	}
 }
